@@ -1,12 +1,16 @@
 /* MY CONTENT */
+body{
+  font-family: "Open Sans", sans-serif;
+}
 
-
-
-
-
-
-body,h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "Crimson Text", serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.7em;
+  font-weight: 400;
 }
 
 body, html {
@@ -31,7 +35,7 @@ img {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('assets/wowie01.gif');
+    background-image: url('assets/logo1-2.jpg');
     min-height: 100%;
 }
 
@@ -45,6 +49,10 @@ img {
 .bgimg-3 {
     background-image: url("assets/wowie01.gif");
     min-height: 400px;
+}
+
+.bit-widget-initializer {
+  text-transform: uppercase;
 }
 
 .overlay {
@@ -80,10 +88,115 @@ width:100%;
     font-weight: 'Regular';
 }
 
+.corner-gradient {
+    position: relative;
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 16px;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 10%;
+    background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+    background: -moz-linear-gradient(right top, rgba(0,0,0,1), rgba(0,0,0,0) 8%);
+    background: -webkit-linear-gradient(right top, rgba(0,0,0,1), rgba(0,0,0,0) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, rgba(0,0,0,1), rgba(0,0,0,0) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, rgba(0,0,0,1), rgba(0,0,0,0) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0) 50%); /* Standard syntax */
+}
 
+.gradient-black {
+    background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); /* Standard syntax */
+}
 
+.social-icon{
+  width: auto;
+  margin-left: inherit;
+  text-align: center;
+  mix-blend-mode: difference;
+}
 
+i {
+  display: inline;
+  float: none;
+}
 
+.fa {
+  color: black;
+}
+
+.invert {
+  mix-blend-mode: difference;
+}
+
+.bit-show-upcoming {
+  visibility: hidden;
+}
+
+.bit-event {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.bit-button {
+  border-radius: 3px;
+}
+#mc_embed_signup {
+  font:0.8em "Open Sans",sans-serif;
+  width:300px;
+}
+
+#mc-embedded-subscribe-form {
+  display: inline;
+}
+
+#mc_embed_signup_scroll {
+  display: inline;
+}
+
+.sub-menu {
+  width: auto;
+}
+
+.email {
+  background-color: black;
+  border-width: 0;
+  color: white;
+  padding-left: 5px;
+}
+
+/*
+<div class="bit-widget-container">
+  <div class="bit-widget bit-layout-row">
+    <div class="bit-event-lists">
+      <div class="bit-local-events-container"></div>
+      <div class="bit-nav-bar-container">
+        <div class="bit-nav-bar">
+          <span class="bit-event-list-title bit-show-upcoming">Upcoming Dates</span>
+        </div>
+      </div>
+      <div class="bit-events-container">
+        <div class="bit-upcoming-events">
+          <a class="bit-event" href="http://www.bandsintown.com/e/20025877?app_id=js_&amp;came_from=242&amp;affil_code=js_&amp;artist=Oh+Mal%C3%B4" target="_blank">
+            <div class="bit-details">
+              <div class="bit-date">Nov 03</div>
+              <div class="bit-venue">Trans-Pecos</div>
+              <div class="bit-location">New York, NY</div>
+            </div>
+            <div class="bit-offers bit-button">Tickets &amp; More</div>
+          </a>
+        </div>
+        <iframe src="https://widget.bandsintown.com/widget_iframe.html?affil_code=js_&amp;app_id=js_&amp;artist_id=11855447&amp;artist_name=Oh%20Mal%C3%B4&amp;came_from_code=242" class="google-pixel-iframe"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+*/
 
 /* W3 TEMPLATE AND EDITED CONTENT */
 
@@ -212,6 +325,7 @@ optgroup {
 button,
 input {
     overflow: visible
+    display: inline;
 }
 button,
 select {
@@ -279,9 +393,9 @@ textarea {
 
 html,
 body {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 1.8
+    line-height: 2em;
 }
 html {
     overflow-x: hidden
@@ -850,6 +964,7 @@ a {
 .w3-top,
 .w3-bottom {
     position: fixed;
+    height: 50px;
     width: 100%;
     z-index: 1
 }
