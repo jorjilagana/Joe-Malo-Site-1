@@ -35,7 +35,7 @@ img {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('assets/logo1-2.jpg');
+    background-image: url('assets/DLDS_GIF_02.gif');
     min-height: 100%;
 }
 
@@ -54,6 +54,8 @@ img {
 .bit-widget-initializer {
   text-transform: uppercase;
 }
+
+
 
 .overlay {
 background-color:rgba(0,0,0,.20);
@@ -143,6 +145,7 @@ width:100%;
   margin-left: inherit;
   text-align: center;
   mix-blend-mode: difference;
+  color: #fff;
 }
 
 i {
@@ -150,12 +153,12 @@ i {
   float: none;
 }
 
-.fa {
-  color: black;
+.fa-pause, .fa-play {
+  color: #ffffff;
 }
 
-.fa-pause, .fa-play {
-  color: #E8C775;
+.fa-facebook {
+
 }
 
 .invert {
@@ -288,8 +291,8 @@ $bar-spacing: 25px;
 }
 
 #videoOverlay {
-    /*position:fixed;
-    top:0;
+    position:fixed;
+    /*top:0;
     left:0;*/
     width:100%;
     height:100%;
@@ -303,6 +306,14 @@ footer {
   padding-top: 100px !important;
   padding-top: 100px !important;
 }
+
+.fa {
+  color: white;
+}
+
+/* Social Icon Color Change*/
+
+
 
 /*
 <div class="bit-widget-container">
