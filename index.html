@@ -81,10 +81,10 @@
     	<span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity invert">
     		<img src="assets/type1.png" style="width:100%; height:auto"></span>
         <!-- Hidden Audio Player -->
-        <audio id="player" autoplay loop controls style="display:none">
-          <source src="assets/dlds_website_V4.mp3" type="audio/mpeg">
+        <!--<audio id="player" autoplay loop controls style="display:none">
+          <source src="assets/dlds_website_V5.mp3" type="audio/mpeg">
           Your browser does not support the audio tag.
-        </audio>
+        </audio>-->
         <!-- Rudimentary Audio Interaction Buttons
         <div>
           <button onclick="document.getElementById('player').play()">Play</button>
@@ -94,9 +94,9 @@
       <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip" title="Preview" onclick="aud_play_pause()"><i id="stateicon" class="fa fa-pause"></i></a>
       -->
   	</div>
-    <div id="state" class="visible-desktop">
+    <!--div id="state" class="visible-desktop">
         <span class="fa fa-pause w3-hover-opacity"></span>
-    </div>
+    </div-->
 </div>
 
 <!-- TOUR -->
@@ -110,7 +110,7 @@
 <div class="video-wrapper">
   <div id="videoOverlay"></div>
   <!--iframe width="560" height="315" src="https://youtu.be/D5WGMybP9EM" frameborder="0" allowfullscreen></iframe-->
-  <iframe onClick="togglePlay()" width="560" height="315" src="https://www.youtube.com/embed/CC2sK2ods6A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe id="myVideo" onClick="togglePlay()" width="560" height="315" src="https://www.youtube.com/embed/CC2sK2ods6A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 <!-- Second Parallax Image with About Us Text -->
@@ -207,6 +207,7 @@ function aud_play_pause() {
     myAudio.pause();
  }
 }
+
 
 //Audio player pause when YouTube is playing
 //function togglePlay() {
